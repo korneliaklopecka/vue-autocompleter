@@ -1,1 +1,65 @@
-
+.section-1 .box .miasta{
+    width: 90%;
+    font-size: 16px;
+    list-style: none;
+    margin-left: 5%;
+    line-height: 35px;
+    font-size: 15px;
+    list-style: none;
+    background-color: rgb(236, 246, 247);
+}
+.section-1 .box .miasta .numerki{
+    list-style: none;
+    text-align: left;
+}
+.section-1 .box .miasta .highlight {
+    font-weight: lighter;
+}
+.box{
+  width: 580px;
+  margin: 0px auto;
+  position: relative;
+  margin-top: -8px;
+  text-align: center;
+}
+.box .s-input{
+  display: block;
+  border: 1px solid #ddd;
+  color: rgba(0, 0, 0, 0.87);
+  font-size: 16px;
+  padding: 13px;
+  padding-left: 45px;
+  border-radius: 25px;
+  width: 100%;
+  transition: box-shadow 100ms;
+  outline: none;
+  
+}
+.box .s-input:hover{
+  border: 1px solid #fff;
+  box-shadow: 0 0 2px rgba(0,0,0, 0.05),
+              0 0 2px rgba(0,0,0, 0.05),
+              0 0 3px rgba(0,0,0, 0.05), 
+              0 0 4px rgba(0,0,0, 0.05), 
+              0 0 5px rgba(0,0,0, 0.05),
+              0 0 4px rgba(0,0,0, 0.05), 
+              0 0 5px rgba(0,0,0, 0.05)    
+}
+ 
+.home{
+  margin-top: 50px;
+  padding-top: 150px;
+  background-color: rgb(151, 200, 233);
+  width:100%;
+  height: 300px;
+  border-radius: 50px;
+}
+.results{
+  margin-top: 50px;
+  padding-top: 150px;
+  background-color: rgb(129, 228, 179);
+  width:100%;
+  height: 300px;
+  border-radius: 50px;
+  
+}
