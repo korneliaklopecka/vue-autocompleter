@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Autocompleter</title>
+    <script src="vue.js"></script>
+    <script src="cities.js"></script>
+    <link rel="stylesheet" type="text/css" href="autocompleter.css">
+    <script src="autocompleter.js"></script>
+</head>
+
+<body>
+    <div id="app" :class="[isActive ==1 ? 'results' : 'home']">
+        <section class="section-1">
+            <form>
+                <center> Autocompleter </center>
+                <div class="box">
+                    <v-autocompleter :options="cities" @click="handleClick(city.name)" @enter="eventHandler()">
+                    </v-autocompleter>
+                </div>
+            </form>
+        </section>
+    </div>
+  
+    <script>
+        var app = new Vue({
+            el: '#app',
+            data: {
+                isActive: 0,
+                googleSearch: '1',
+                cities: window.cities,
+            },
+            methods: {
+                eventHandler: function () {
+                    event.preventDefault()
+                    this.isActive = 1
+                },
+            },
+
+        });
+    </script>
+</body>
+  
+</html>
